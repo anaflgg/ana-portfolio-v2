@@ -90,7 +90,7 @@ function HeroVisual() {
 // ─── Hero ─────────────────────────────────────────────────────────────────────
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center pt-20 overflow-hidden" aria-labelledby="hero-heading">
+    <section id="home" className="relative min-h-screen flex flex-col justify-center pt-20 overflow-hidden" aria-labelledby="hero-heading">
       <div className="pointer-events-none absolute inset-0 opacity-[0.04]" style={{ backgroundImage: "linear-gradient(rgba(0,255,135,0.8) 1px, transparent 1px), linear-gradient(90deg, rgba(0,255,135,0.8) 1px, transparent 1px)", backgroundSize: "40px 40px" }} aria-hidden="true" />
       <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full opacity-10" style={{ background: "radial-gradient(circle, rgba(0,255,135,0.3) 0%, transparent 70%)" }} aria-hidden="true" />
 

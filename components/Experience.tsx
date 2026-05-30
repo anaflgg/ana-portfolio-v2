@@ -37,7 +37,7 @@ const experiences = [
 // ─── Experience ───────────────────────────────────────────────────────────────
 export default function Experience() {
   return (
-    <section id="experiencia" className="py-28" aria-labelledby="exp-heading">
+    <section id="experiencias" className="py-28" aria-labelledby="exp-heading">
       <div className="max-w-[1100px] mx-auto px-8 md:px-10 flex flex-col gap-14">
 
         {/* Header */}
