@@ -1,12 +1,22 @@
 import type { Metadata } from "next";
-import { Space_Mono } from "next/font/google";
+import { DM_Sans, Space_Mono } from "next/font/google";
 import "./globals.css";
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
 
 const spaceMono = Space_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
   weight: ["400", "700"],
 });
+
+export const metadata: Metadata = {
+  title: "Ana Ananias | Front-End Developer",
+  description: "Portfólio de Ana Ananias, desenvolvedora front-end.",
+};
 
 export default function RootLayout({
   children,
@@ -15,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={spaceMono.variable}>
+      <body className={`${dmSans.variable} ${spaceMono.variable}`}>
         {children}
       </body>
     </html>
