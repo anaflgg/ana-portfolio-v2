@@ -23,8 +23,8 @@ const TERMINAL_LINES: TerminalLine[] = [
   { text: "> conexão estabelecida ✓",          type: "success" },
 ];
 
-const LINE_DELAY    = 800; // ms entre linhas
-const HOLD_AFTER    = 1200; // ms segura o terminal após última linha
+const LINE_DELAY    = 600; // ms entre linhas
+const HOLD_AFTER    = 1000; // ms segura o terminal após última linha
 
 // ─── Terminal ─────────────────────────────────────────────────────────────────
 function ContactTerminal({ onDone }: { onDone: () => void }) {
