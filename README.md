@@ -10,7 +10,7 @@
 
 > Reconstrução completa do portfólio pessoal usando Next.js, TypeScript e React. Mesma temática hacker/terminal da versão anterior, agora com componentes reutilizáveis, animações com Motion e deploy na Vercel.
 
-### ✨ [Veja o portfólio ao vivo aqui!](#)
+### ✨ [Veja o portfólio ao vivo aqui!](https://ana-portfolio-v2.vercel.app/)
 
 ---
 
