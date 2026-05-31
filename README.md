@@ -36,7 +36,6 @@ A identidade visual hacker foi mantida e aprimorada: fundo escuro, neon verde, e
 - **Next.js 14** — App Router, Server e Client Components
 - **Tailwind CSS v4** — estilização utility-first
 - **Motion** — animações com spring physics e layoutId
-- **Supabase** — usado nos projetos listados no portfólio
 - **Git + GitHub** — controle de versão
 - **Vercel** — deploy contínuo
 
