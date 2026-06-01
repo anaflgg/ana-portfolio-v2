@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { Button } from "@/components/Button";
 import { FadeUp } from "@/components/FadeUp";
+import { SectionBadge } from "@/components/SectionBadge";
 import Image from "next/image";
 
 // ─── Typewriter ───────────────────────────────────────────────────────────────
@@ -79,9 +80,9 @@ function HeroVisual() {
         >
           <Image src="/img/foto-perfil.jpeg" alt="Foto de Ana Ananias" width={300} height={300} className="w-full h-full object-cover" />
         </div>
-        <motion.span animate={{ y: [0, -5, 0] }} transition={{ duration: 3.5, ease: "easeInOut", repeat: Infinity }} className="absolute -top-2 -right-4 font-mono text-xs text-[#00ff87]/70 border border-[#00ff87]/20 bg-[#050d0a] px-2.5 py-1 rounded" aria-hidden="true">&lt;/html&gt;</motion.span>
-        <motion.span animate={{ y: [0, 5, 0] }} transition={{ duration: 4, ease: "easeInOut", repeat: Infinity, delay: 0.8 }} className="absolute right-[-3.5rem] top-1/2 -translate-y-1/2 font-mono text-xs text-[#00ff87]/70 border border-[#00ff87]/20 bg-[#050d0a] px-2.5 py-1 rounded" aria-hidden="true">async/await</motion.span>
-        <motion.span animate={{ y: [0, -4, 0] }} transition={{ duration: 3, ease: "easeInOut", repeat: Infinity, delay: 1.2 }} className="absolute -bottom-2 left-4 font-mono text-xs text-[#00ff87]/70 border border-[#00ff87]/20 bg-[#050d0a] px-2.5 py-1 rounded" aria-hidden="true">fetch()</motion.span>
+        <motion.span animate={{ y: [0, -5, 0] }} transition={{ duration: 3.5, ease: "easeInOut", repeat: Infinity }} className="absolute -top-2 -right-4 font-mono text-xs text-[#00ff87] bg-[#00ff87]/[0.07] border border-[#00ff87]/20 px-4 py-1.5 rounded-full" aria-hidden="true">&lt;/html&gt;</motion.span>
+        <motion.span animate={{ y: [0, 5, 0] }} transition={{ duration: 4, ease: "easeInOut", repeat: Infinity, delay: 0.8 }} className="absolute right-[-3.5rem] top-1/2 -translate-y-1/2 font-mono text-xs text-[#00ff87] bg-[#00ff87]/[0.07] border border-[#00ff87]/20 px-4 py-1.5 rounded-full" aria-hidden="true">async/await</motion.span>
+        <motion.span animate={{ y: [0, -4, 0] }} transition={{ duration: 3, ease: "easeInOut", repeat: Infinity, delay: 1.2 }} className="absolute -bottom-2 left-4 font-mono text-xs text-[#00ff87] bg-[#00ff87]/[0.07] border border-[#00ff87]/20 px-4 py-1.5 rounded-full" aria-hidden="true">fetch()</motion.span>
       </div>
     </motion.figure>
   );
@@ -98,13 +99,7 @@ export default function Hero() {
         <div className="flex-1 flex flex-col gap-6">
 
           <FadeUp delay={0.1}>
-            <span className="inline-flex items-center gap-2 font-mono text-xs tracking-widest text-[#00ff87]/70 border border-[#00ff87]/20 rounded-full px-4 py-1.5 w-fit" role="status" aria-live="polite">
-              <span className="relative flex h-2 w-2" aria-hidden="true">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00ff87] opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00ff87]" />
-              </span>
-              disponível para oportunidades
-            </span>
+            <SectionBadge label="disponível para oportunidades" />
           </FadeUp>
 
           <FadeUp delay={0.2}>

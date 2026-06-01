@@ -138,7 +138,7 @@ export default function Stack() {
   useEffect(() => {
     if (!scanning) return;
 
-    const DURATION = 2200; // ms total da varredura
+    const DURATION = 2500; // ms total da varredura
     const start = performance.now();
 
     const tick = (now: number) => {
