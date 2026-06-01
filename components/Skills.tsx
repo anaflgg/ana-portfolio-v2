@@ -22,7 +22,6 @@ const skillGroups = [
     skills: [
       { name: "API REST",    icon: <i className="devicon-fastapi-plain colored" /> },
       { name: "Supabase",    icon: <i className="devicon-supabase-plain colored" /> },
-      { name: "PostgreSQL",  icon: <i className="devicon-postgresql-plain colored" /> },
       {
         name: "Insomnia",
         icon: (
